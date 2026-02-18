@@ -119,6 +119,7 @@ b {
 text-align: center !important;
 transform: translateX(-2%);
     margin-top: -40px;  /* 🔼 la sube */
+    margin-bottom: 0 !important; /* Quita el espacio de abajo */
 
 }
 .cartaAbajo {
@@ -328,4 +329,5 @@ body.loading {
 
 .tabla-sin-bordes td {
   padding: 3px;
+
 }
