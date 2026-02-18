@@ -123,14 +123,15 @@ transform: translateX(-2%);
 }
 .cartaAbajo {
     position: relative; /* Clave: actúa como un ancla para la imagen */
-    top: 10%; /* La centra verticalmente respecto a la carta */
+    top: 1%; /* La centra verticalmente respecto a la carta */
     left: 50%; /* La centra horizontalmente respecto a la carta */
     transform: translate(-50%, -50%); /* Ajuste fino para centrado perfecto */
     width: 90%; /* Hazla un poco más grande que la carta si quieres que sobresalga */
+    height:100%;
     z-index: -1; /* La manda al fondo del contenedor .carta */
     pointer-events: none;
         display: block;      /* Asegura que ocupe todo el ancho */
-    margin-top: 10px;  /* 🔼 la sube */
+padding: 1px 1px;    
 
 }
 .imagen-fondo {
@@ -138,10 +139,38 @@ transform: translateX(-2%);
     top: 15%; /* La centra verticalmente respecto a la carta */
     left: 50%; /* La centra horizontalmente respecto a la carta */
     transform: translate(-50%, -50%); /* Ajuste fino para centrado perfecto */
-    width: 120%; /* Hazla un poco más grande que la carta si quieres que sobresalga */
+    width: 110%; /* Hazla un poco más grande que la carta si quieres que sobresalga */
     z-index: -1; /* La manda al fondo del contenedor .carta */
     opacity: 0.3; /* Ajusta la transparencia para que el texto sea legible */
     pointer-events: none;
+}
+.imagen-fondo1 {
+    position: absolute;
+    top: 15%; /* La centra verticalmente respecto a la carta */
+    left: 50%; /* La centra horizontalmente respecto a la carta */
+    transform: translate(-50%, -50%); /* Ajuste fino para centrado perfecto */
+    width: 110%; /* Hazla un poco más grande que la carta si quieres que sobresalga */
+    z-index: -1; /* La manda al fondo del contenedor .carta */
+    opacity: 0.3; /* Ajusta la transparencia para que el texto sea legible */
+    pointer-events: none;
+    top: 10% !important;
+
+}
+@media (max-width: 480px) {
+    .cartaAbajo {
+        width: 90vw; /* Asegura que la tarjeta no se pegue a los bordes del celular */
+    }
+    
+    .imagen-fondo1 {
+        width: 80%; /* En móvil a veces conviene que las flores se vean más grandes aunque se corten */
+        display: block;      /* Asegura que ocupe todo el ancho */
+        top: 80% !important;
+    }
+    .imagen-fondo {
+        width: 110%; /* En móvil a veces conviene que las flores se vean más grandes aunque se corten */
+        display: block;      /* Asegura que ocupe todo el ancho */
+        top: 10% !important;
+    }
 }
 .subtitle {
     font-family: "marcellus1";
