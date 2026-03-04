@@ -435,6 +435,24 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
       opacity: 0.8;
 
 }
+/* 2. Creamos la capa de fondo que Safari SÍ acepta */
+.seccion-fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-image: url('Imagenes/CabeceraImagen.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* SOLUCIÓN SAFARI: En móviles, usamos scroll normal o una capa fija */
+    background-attachment: scroll; 
+    opacity: 0.8;
+    z-index: -1;
+}
         @media (max-width: 768px) {
 .seccion-fondo {
 width: 130%;   /* 100% del ancho de la ventana gráfica */
@@ -448,5 +466,4 @@ width: 130%;   /* 100% del ancho de la ventana gráfica */
 /* Imagen de la invitación de Felipe & Paola */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
-
 }
