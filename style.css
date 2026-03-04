@@ -426,7 +426,6 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* MANTIENE LA IMAGEN FIJA */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,21 +434,6 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
       opacity: 0.8;
 
 
-}
-@supports (-webkit-touch-callout: none) {
-  .section {
-width: 116%;   /* 100% del ancho de la ventana gráfica */
-  height: 80vh; /* Ocupa todo el alto de la pantalla */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll; /* MANTIENE LA IMAGEN FIJA */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
-    margin-top: -35px;  /* 🔼 la sube */
-      opacity: 0.8;  }
 }
 
         @media (max-width: 768px) {
