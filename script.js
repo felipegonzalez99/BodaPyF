@@ -1,47 +1,29 @@
 // 1. LÓGICA PARA ABRIR EL SOBRE
-
-const envelope = document.getElementById("envelope");
-
+const pantalla = document.getElementById('bienvenida');
 const musica = document.getElementById("musica");
+let interactuado = false; // Variable para saber si ya hicieron clic
 
-envelope.addEventListener("click", () => {
+// FUNCIÓN PARA QUITAR EL SOBRE
+function quitarSobre() {
+    if (pantalla.classList.contains('oculto')) return; // Si ya se está quitando, no hacer nada
+    musica.play().catch(e => console.log("Audio bloqueado:", e));
+    pantalla.classList.add('oculto');
+    setTimeout(() => {
+        pantalla.style.display = 'none';
+    }, 1500);
+}
 
-  musica.play(); // 🎵 inicia música
+// 1. EVENTO POR CLIC (Activa música + Quita sobre)
+pantalla.addEventListener('click', function() {
+    interactuado = true;
+    
+    // Intentar tocar música
+    musica.play().catch(e => console.log("Audio bloqueado:", e));
+    
+    // Quitar el sobre un poco más rápido si hicieron clic (opcional)
+    setTimeout(quitarSobre, 500); 
+}, { once: true });
 
-  const tl = gsap.timeline();
-
-  // Abrir solapa
-  tl.to(".flap", {
-    rotationX: 180,
-    duration: 1,
-    ease: "power2.inOut"
-  });
-
-  // Sacar carta
-  tl.to(".letter", {
-    y: -80,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-  // Desvanecer loader
-  tl.to("#loader", {
-    opacity: 0,
-    duration: 2,
-    delay: 1,
-    onComplete: () => {
-      document.getElementById("loader").style.display = "none";
-      document.body.style.overflow = "auto";
-    }
-  });
-
-  // Mostrar contenido
-  tl.to("#contenido", {
-    opacity: 1,
-    duration: 2
-  });
-
-});
 // 2. CUENTA REGRESIVA
 const weddingDate = new Date('December 12, 2026 17:00:00').getTime();
 
