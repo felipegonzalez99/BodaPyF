@@ -428,6 +428,8 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
   background-size: cover;
   display: flex;
   justify-content: center;
+          background-attachment: fixed;
+
   align-items: center;
   margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
     margin-top: -35px;  /* 🔼 la sube */
@@ -449,7 +451,7 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
         height: 60vh; /* Un poco más baja para que quepa mejor el texto en móviles */
     }
     .seccion-fondo::before {
-        width: 125%;  /* Aquí aplicamos el ancho extra que querías */
+        width: 124%;  /* Aquí aplicamos el ancho extra que querías */
         left: -15%;   /* Centramos ese ancho extra */
         top: -35px;   /* Subimos la imagen como en tu código original */
     }
@@ -459,3 +461,4 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
 }
+
