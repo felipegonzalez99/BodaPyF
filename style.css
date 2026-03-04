@@ -87,8 +87,9 @@ body {
                 max-height: 100% !important;
                 
                 /* Quitamos estilos de "tarjeta" para móvil */
-                border-radius: 0 !important;
-                box-shadow: none !important;
+ border-radius: 25px; /* Ajusta este valor para cambiar la redondez */
+    overflow: hidden;    /* Asegura que el contenido no sobresalga de las esquinas */
+    display: block;
                 
                 /* object-fit: cover; ya está definido arriba y se aplica aquí */
             }
@@ -412,4 +413,5 @@ background-image: url("Imagenes/FondoFlores1.png");
     background-position: center top; /* Centrada horizontalmente y arriba */
     /* Necesitas definir una altura proporcional a la imagen original */
     height: 400px; /* Ajusta este valor según la proporción de tu imagen */
+
 }
