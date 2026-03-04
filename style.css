@@ -219,7 +219,7 @@ padding: 1px 1px;
     z-index: 2;
     margin-bottom: 0; /* Pega el "¡NOS CASAMOS!" a los nombres */
 text-align: center !important;
-/*transform: translateX(2%);*/
+transform: translateY(-200%);
 }
 .titulocarta {
   font-family: "Perfume";
@@ -243,6 +243,8 @@ transform: translateX(-3%);
     line-height: 1.2; /* Junta las letras si el nombre se divide en dos líneas */
 text-align: center !important;
 transform: translateX(-3%);
+transform: translateY(-8%);
+
 
 }
 .subtitulo {
@@ -379,6 +381,8 @@ background-image: url("Imagenes/FondoFlores1.png");
   width: 116%;
   height: 75px;
   transform: translateX(-7%);
+  opacity: 0.5;
+
 
 }
 @media (max-width: 480px) {
@@ -459,5 +463,3 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
 }
-
-
