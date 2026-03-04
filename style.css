@@ -81,13 +81,14 @@ body {
 
             #bienvenida img {
                 /* Forzamos el 100% de ancho y alto */
-                width: 100% !important;
-                height: 100% !important;
-                max-width: 100% !important;
-                max-height: 100% !important;
-                
+                width: 80% !important;
+                height: 80dvh !important;
+                max-width: 80% !important;
+                height: 80dvh !important;
+                            text-align: center;
+            padding: 50px;
                 /* Quitamos estilos de "tarjeta" para móvil */
- border-radius: 25px; /* Ajusta este valor para cambiar la redondez */
+ border-radius: 50px; /* Ajusta este valor para cambiar la redondez */
     overflow: hidden;    /* Asegura que el contenido no sobresalga de las esquinas */
     display: block;
                 
@@ -340,7 +341,7 @@ button:hover {
 }
 
 .carousel img {
-  width: 70vw;          /* 70% del ancho de pantalla */
+  width: 80vw;          /* 70% del ancho de pantalla */
   max-width: 200px;     /* límite en escritorio */
   height: auto;
   margin-right: 20px;
@@ -376,7 +377,7 @@ body.loading {
 }
 .FondoFlores {
 background-image: url("Imagenes/FondoFlores1.png");
-  width: 115%;
+  width: 116%;
   height: 75px;
   transform: translateX(-7%);
 
@@ -384,9 +385,9 @@ background-image: url("Imagenes/FondoFlores1.png");
 @media (max-width: 480px) {
 .FondoFlores {
 background-image: url("Imagenes/FondoFlores1.png");
-  width: 130%;
+  width: 125%;
   height: 75px;
-  transform: translateX(-12%);
+  transform: translateX(-10%);
 
 }
 }
@@ -459,4 +460,3 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
 }
-
