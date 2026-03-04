@@ -428,8 +428,6 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
   background-size: cover;
   display: flex;
   justify-content: center;
-          background-attachment: fixed;
-
   align-items: center;
   margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
     margin-top: -35px;  /* 🔼 la sube */
@@ -461,4 +459,5 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
 }
+
 
