@@ -443,7 +443,6 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
     left: -5%;
     width: 110%; 
     height: 110%;
-  background-image: url('Imagenes/CabeceraImagen.jpeg'); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -477,3 +476,4 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
 }
+
