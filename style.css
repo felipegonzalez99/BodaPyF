@@ -435,14 +435,42 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 
 
 }
+.seccion-fondo::before {
+    content: "";
+    position: absolute;
+    /* Ajustamos el tamaño para que cubra todo y permita el "movimiento" que buscas */
+    top: -5%; 
+    left: -5%;
+    width: 110%; 
+    height: 110%;
+  background-image: url('Imagenes/CabeceraImagen.jpeg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
 
-        @media (max-width: 768px) {
-.seccion-fondo {
-width: 130%;   /* 100% del ancho de la ventana gráfica */
-    margin-top: -35px;  /* 🔼 la sube */
-  margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
-
+    /* COMPATIBILIDAD MÓVIL (Safari/Android) */
+    background-attachment: scroll; /* Por defecto en móviles para evitar que desaparezca */
 }
+
+@media (min-width: 1024px) {
+    .seccion-fondo::before {
+        background-attachment: fixed;
+    }
+}
+
+/* Ajustes específicos para móviles (Android/iPhone) */
+@media (max-width: 768px) {
+    .seccion-fondo {
+    width: 125%; 
+        height: 60vh; /* Un poco más baja para que quepa mejor el texto en móviles */
+    }
+    .seccion-fondo::before {
+        width: 125%;  /* Aquí aplicamos el ancho extra que querías */
+        left: -15%;   /* Centramos ese ancho extra */
+        top: -35px;   /* Subimos la imagen como en tu código original */
+    }
 }
 
 /* Imagen de la invitación de Felipe & Paola */
