@@ -81,14 +81,13 @@ body {
 
             #bienvenida img {
                 /* Forzamos el 100% de ancho y alto */
-                width: 80% !important;
-                height: 80dvh !important;
-                max-width: 80% !important;
-                height: 80dvh !important;
-                            text-align: center;
-            padding: 50px;
+                width: 100% !important;
+                height: 100dvh !important;
+                max-width: 100% !important;
+                max-height: 100% !important;
+                
                 /* Quitamos estilos de "tarjeta" para móvil */
- border-radius: 50px; /* Ajusta este valor para cambiar la redondez */
+ border-radius: 25px; /* Ajusta este valor para cambiar la redondez */
     overflow: hidden;    /* Asegura que el contenido no sobresalga de las esquinas */
     display: block;
                 
