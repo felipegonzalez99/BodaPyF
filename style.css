@@ -435,11 +435,12 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
       opacity: 0.8;
 
 }
-@media (max-width: 480px) {
+        @media (max-width: 768px) {
 .seccion-fondo {
 width: 130%;   /* 100% del ancho de la ventana gráfica */
     margin-top: -35px;  /* 🔼 la sube */
   margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
+  will-change: transform; /* Ayuda a Safari con el rendimiento */
 
 }
 }
@@ -447,4 +448,5 @@ width: 130%;   /* 100% del ancho de la ventana gráfica */
 /* Imagen de la invitación de Felipe & Paola */
 .fondo-1 {
   background-image: url('Imagenes/CabeceraImagen.jpeg'); 
+
 }
