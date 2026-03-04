@@ -247,7 +247,7 @@ transform: translateX(-3%);
 }
 .subtitulo {
     font-family: "marcellus1";
-    color: #000000;
+    color: #FFFFFF;
     font-size: 1rem;
 margin-bottom: 0 !important;
     padding-bottom: 0 !important;
@@ -277,6 +277,7 @@ margin-bottom: 0 !important; /* Quita el espacio de abajo */
 .ceremonia {
     border-top: 1px solid #eee;
     border-bottom: 2px solid #eee;
+    
 }
 .invitado {
   font-family: "Perfume";
@@ -328,6 +329,8 @@ button:hover {
   width: 100%;
   margin-top: 0 !important;    /* Quita el espacio de arriba si es necesario */
     padding-bottom: 0 !important;
+        border-bottom: 2px solid #eee;
+
 }
 
 .carousel-track {
@@ -414,4 +417,34 @@ background-image: url("Imagenes/FondoFlores1.png");
     /* Necesitas definir una altura proporcional a la imagen original */
     height: 400px; /* Ajusta este valor según la proporción de tu imagen */
 
+}
+
+/* Estilo general para las secciones de fondo */
+.seccion-fondo {
+width: 116%;   /* 100% del ancho de la ventana gráfica */
+  height: 80vh; /* Ocupa todo el alto de la pantalla */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* MANTIENE LA IMAGEN FIJA */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
+    margin-top: -35px;  /* 🔼 la sube */
+      opacity: 0.8;
+
+}
+@media (max-width: 480px) {
+.seccion-fondo {
+width: 130%;   /* 100% del ancho de la ventana gráfica */
+    margin-top: -35px;  /* 🔼 la sube */
+  margin-left: -35px; /* Ajusta este valor según cuánto quieras moverla a la izquierda */
+
+}
+}
+
+/* Imagen de la invitación de Felipe & Paola */
+.fondo-1 {
+  background-image: url('Imagenes/CabeceraImagen.jpeg'); 
 }
