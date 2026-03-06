@@ -381,7 +381,7 @@ background-image: url("Imagenes/FondoFlores1.png");
   width: 116%;
   height: 75px;
   transform: translateX(-7%);
-  opacity: 0.5;
+  opacity: 0.8;
 
 
 }
@@ -453,7 +453,7 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
         height: 60vh; /* Un poco más baja para que quepa mejor el texto en móviles */
     }
     .seccion-fondo::before {
-        width: 124%;  /* Aquí aplicamos el ancho extra que querías */
+        width: 123%;  /* Aquí aplicamos el ancho extra que querías */
         left: -15%;   /* Centramos ese ancho extra */
         top: -35px;   /* Subimos la imagen como en tu código original */
     }
