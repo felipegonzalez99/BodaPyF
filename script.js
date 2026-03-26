@@ -25,7 +25,7 @@ pantalla.addEventListener('click', function() {
 }, { once: true });
 
 // 2. CUENTA REGRESIVA
-const weddingDate = new Date('December 12, 2026 17:00:00').getTime();
+const weddingDate = new Date('December 12, 2026 15:00:00').getTime();
 
 setInterval(function() {
     const now = new Date().getTime();
