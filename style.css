@@ -160,19 +160,6 @@ transform: translateX(-2%);
     margin-bottom: 0 !important; /* Quita el espacio de abajo */
 }
 
-.cartaAbajo {
-    position: relative; /* Clave: actúa como un ancla para la imagen */
-    top: 1%; /* La centra verticalmente respecto a la carta */
-    left: 50%; /* La centra horizontalmente respecto a la carta */
-    transform: translate(-50%, -50%); /* Ajuste fino para centrado perfecto */
-    width: 90%; /* Hazla un poco más grande que la carta si quieres que sobresalga */
-    height:100%;
-    z-index: -1; /* La manda al fondo del contenedor .carta */
-    pointer-events: none;
-        display: block;      /* Asegura que ocupe todo el ancho */
-padding: 1px 1px;    
-
-}
 .imagen-fondo {
     position: absolute;
     top: 15%; /* La centra verticalmente respecto a la carta */
@@ -212,6 +199,16 @@ padding: 1px 1px;
     }
 }
 .subtitle {
+    font-family: "marcellus1";
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 2;
+    margin-bottom: 0; /* Pega el "¡NOS CASAMOS!" a los nombres */
+text-align: center !important;
+transform: translateY(-400%);
+}
+.subtitle1 {
     font-family: "marcellus1";
     letter-spacing: 5px;
     color: #888;
@@ -277,6 +274,11 @@ margin-bottom: 0 !important; /* Quita el espacio de abajo */
       font-size: 1rem;
 }
 .ceremonia {
+    border-top: 1px solid #eee;
+    border-bottom: 2px solid #eee;
+    
+}
+.fotoFinal {
     border-top: 1px solid #eee;
     border-bottom: 2px solid #eee;
     
@@ -382,8 +384,6 @@ background-image: url("Imagenes/FondoFlores1.png");
   height: 75px;
   transform: translateX(-7%);
   opacity: 0.8;
-
-
 }
 @media (max-width: 480px) {
 .FondoFlores {
@@ -449,11 +449,11 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 /* Ajustes específicos para móviles (Android/iPhone) */
 @media (max-width: 768px) {
     .seccion-fondo {
-    width: 125%; 
+    width: 124%; 
         height: 60vh; /* Un poco más baja para que quepa mejor el texto en móviles */
     }
     .seccion-fondo::before {
-        width: 123%;  /* Aquí aplicamos el ancho extra que querías */
+        width: 121%;  /* Aquí aplicamos el ancho extra que querías */
         left: -15%;   /* Centramos ese ancho extra */
         top: -35px;   /* Subimos la imagen como en tu código original */
     }
@@ -461,5 +461,5 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 
 /* Imagen de la invitación de Felipe & Paola */
 .fondo-1 {
-  background-image: url('Imagenes/CabeceraImagen.jpeg'); 
+  background-image: url('Imagenes/image00001.jpeg'); 
 }
