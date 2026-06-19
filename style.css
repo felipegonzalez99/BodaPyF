@@ -197,16 +197,6 @@ transform: translateX(-2%);
         display: block;      /* Asegura que ocupe todo el ancho */
         top: 10% !important;
     }
-    .subtitle {
-    font-family: "marcellus1";
-    letter-spacing: 5px;
-    color: #fff;
-    font-size: 1.5rem;
-    z-index: 2;
-    margin-bottom: 0; /* Pega el "¡NOS CASAMOS!" a los nombres */
-text-align: center !important;
-transform: translateY(-100%);
-}
 }
 .subtitle {
     font-family: "marcellus1";
@@ -216,7 +206,13 @@ transform: translateY(-100%);
     z-index: 2;
     margin-bottom: 0; /* Pega el "¡NOS CASAMOS!" a los nombres */
 text-align: center !important;
-transform: translateY(-400%);
+transform: translateY(-300%);
+    text-shadow: 
+        2px 2px 2px rgba(0, 0, 0, 0.9), 
+       -2px -2px 2px rgba(0, 0, 0, 0.9), 
+        2px -2px 2px rgba(0, 0, 0, 0.9), 
+       -2px 2px 2px rgba(0, 0, 0, 0.9),
+        0px 0px 12px rgba(0, 0, 0, 0.7);
 }
 .subtitle1 {
     font-family: "marcellus1";
@@ -253,7 +249,12 @@ transform: translate(-3%, -8%); /* Optimizado en una sola línea */
 text-align: center !important;
 transform: translateX(-3%);
 transform: translateY(-8%);
-
+    text-shadow: 
+        2px 2px 2px rgba(0, 0, 0, 0.9), 
+       -2px -2px 2px rgba(0, 0, 0, 0.9), 
+        2px -2px 2px rgba(0, 0, 0, 0.9), 
+       -2px 2px 2px rgba(0, 0, 0, 0.9),
+        0px 0px 12px rgba(0, 0, 0, 0.7);
 
 }
 .subtitulo {
@@ -266,8 +267,68 @@ margin-bottom: 0 !important;
 margin-bottom: 20 !important; /* Quita el espacio de abajo */
   margin-top: 0 !important;    /* Quita el espacio de arriba si es necesario */
     padding-bottom: 0 !important;
+    text-shadow: 
+        2px 2px 2px rgba(0, 0, 0, 0.9), 
+       -2px -2px 2px rgba(0, 0, 0, 0.9), 
+        2px -2px 2px rgba(0, 0, 0, 0.9), 
+       -2px 2px 2px rgba(0, 0, 0, 0.9),
+        0px 0px 12px rgba(0, 0, 0, 0.7);
 
+}
+@media (max-width: 768px) {
+.subtitle {
+    font-family: "marcellus1";
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 2;
+    margin-bottom: 0; /* Pega el "¡NOS CASAMOS!" a los nombres */
+text-align: center !important;
+transform: translateY(10%);
+    text-shadow: 
+        2px 2px 2px rgba(0, 0, 0, 0.9), 
+       -2px -2px 2px rgba(0, 0, 0, 0.9), 
+        2px -2px 2px rgba(0, 0, 0, 0.9), 
+       -2px 2px 2px rgba(0, 0, 0, 0.9),
+        0px 0px 12px rgba(0, 0, 0, 0.7);
+}
 
+.novios {
+    font-family: 'MiFuenteElegante', cursive;
+    color: #b08d57;
+    font-size: 7rem;
+    position: relative; 
+    z-index: 2;
+    margin: 10px 0; 
+    line-height: 1.2; 
+    text-align: center !important;
+    transform: translate(-3%, 20%); /* Corregido error de sintaxis que tenías aquí */
+    /* 🌟 Sombra definida para resaltar el dorado */
+    text-shadow: 
+        2px 2px 2px rgba(0, 0, 0, 0.9), 
+       -2px -2px 2px rgba(0, 0, 0, 0.9), 
+        2px -2px 2px rgba(0, 0, 0, 0.9), 
+       -2px 2px 2px rgba(0, 0, 0, 0.9),
+        0px 0px 12px rgba(0, 0, 0, 0.7);}
+
+.subtitulo {
+    font-family: "marcellus1";
+    color: #FFFFFF;
+    font-size: 1rem;
+margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    text-align: center !important;
+margin-bottom: 20 !important; /* Quita el espacio de abajo */
+  margin-top: 0 !important;    /* Quita el espacio de arriba si es necesario */
+    padding-bottom: 0 !important;
+transform: translateY(30%);
+    text-shadow: 
+        2px 2px 2px rgba(0, 0, 0, 0.9), 
+       -2px -2px 2px rgba(0, 0, 0, 0.9), 
+        2px -2px 2px rgba(0, 0, 0, 0.9), 
+       -2px 2px 2px rgba(0, 0, 0, 0.9),
+        0px 0px 12px rgba(0, 0, 0, 0.7);
+}
 }
 .cuerpo {
     font-family: "marcellus1";
@@ -480,32 +541,27 @@ width: 116%;   /* 100% del ancho de la ventana gráfica */
 .Fotos1 {
     background-image: url('Imagenes/PREBODA9.jpg'); 
     background-size: contain; /* Para que la imagen se ajuste sin cortarse */
-    transform: translateX(10%);
-     width: 85%; 
-    height: 550px;
+     width: 80%; 
+    height: 500px;
         background-repeat: no-repeat;
 
 }
 .Fotos2 {
     background-image: url('Imagenes/PREBODA5.jpg'); 
     background-size: contain; /* Para que la imagen se ajuste sin cortarse */
-    transform: translateX(10%);
-     width: 85%; 
-    height: 550px;
+     width: 80%; 
+    height: 500px;
         background-repeat: no-repeat;
 
 }
-@media (max-width: 800px) {
-.Fotos1 {
-    background-image: url('Imagenes/PREBODA9.jpg'); 
-    background-size: contain; /* Para que la imagen se ajuste sin cortarse */
-             background-repeat: no-repeat;
+@media (max-width: 768px) {
+  .Fotos1, .Fotos2 {
+      display: block;          /* Elimina espacios invisibles debajo de la imagen */
+      width: 100%;              /* Controla qué tan ancha se ve en el celular (puedes subirlo a 85% o 90% si la quieres más grande) */
+      height: auto !important; /* 🌟 CLAVE: La altura se adapta dinámicamente al tamaño real de la foto sin dejar pixeles vacíos */
+      margin: 25px auto;       /* Centra la imagen y añade un espacio limpio arriba y abajo */
+      border-radius: 4px;      /* Opcional: un toque sutil en las esquinas */
+      transform: none;         /* Limpia cualquier desplazamiento previo que empuje los elementos */
+  }
 
-}
-.Fotos2 {
-    background-image: url('Imagenes/PREBODA5.jpg'); 
-    background-size: contain; /* Para que la imagen se ajuste sin cortarse */
-        background-repeat: no-repeat;
-
-}
 }
