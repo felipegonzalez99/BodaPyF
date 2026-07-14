@@ -14,6 +14,14 @@ function quitarSobre() {
 }
 
 // 1. EVENTO POR CLIC (Activa música + Quita sobre)
+// 🌟 Control del tiempo: Revisa el reproductor constantemente
+musica.addEventListener('timeupdate', function() {
+    const LIMITE_SEGUNDOS = 60; // 1 minuto exacto
+    if (musica.currentTime >= LIMITE_SEGUNDOS) {
+        musica.pause();
+        musica.currentTime = 0; // Deja la canción lista por si se vuelve a activar
+    }
+});
 pantalla.addEventListener('click', function() {
     interactuado = true;
     
@@ -23,7 +31,6 @@ pantalla.addEventListener('click', function() {
     // Quitar el sobre un poco más rápido si hicieron clic (opcional)
     setTimeout(quitarSobre, 500); 
 }, { once: true });
-
 // 2. CUENTA REGRESIVA
 const weddingDate = new Date('December 12, 2026 15:00:00').getTime();
 
