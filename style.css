@@ -6,6 +6,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'MiFuenteSub';
+    src: url('CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'marcellus1';
     src: url('Marcellus-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -365,7 +371,7 @@ transform: translateY(100%);
 
 }
 .p_invitado {
-      font-family: "Dancing Script";
+    font-family: 'MiFuenteSub', cursive;
         font-size: 0.8rem;
             border-bottom: 2px solid #eee;
 
